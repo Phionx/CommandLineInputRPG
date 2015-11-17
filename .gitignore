@@ -1,0 +1,6 @@
+#Remove Classes
+*.class
+
+#Remove zips
+*.zip
+
