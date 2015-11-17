@@ -26,4 +26,7 @@ super.defense--;
 super.attack++;
 }
 
-}
+public String about(){
+	return "The magicks are strong in these young-uns.";
+
+}}

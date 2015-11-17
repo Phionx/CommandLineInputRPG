@@ -29,4 +29,7 @@ public void specialize(){
 super.defense--;
 super.attack++;
 }
+    public String about(){
+	return "The bad guys that are also not humans";
+    }
 }

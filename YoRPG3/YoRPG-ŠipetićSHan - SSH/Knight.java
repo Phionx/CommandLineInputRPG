@@ -26,4 +26,7 @@ super.defense--;
 super.attack++;
 }
 
+    public String about(){
+	return "Knights are extremely skilled warriors hand picked by his majesty himself. While they have higher stats than a warrior and a horse to assist them in their travels, their main disadvantage is that they are bound to serve their majesty, and therefore have no free will whatsoever. They still get to, like, kill stuff though.";
+    }
 }

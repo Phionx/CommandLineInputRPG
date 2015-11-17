@@ -25,5 +25,8 @@ public void specialize(){
 super.defense--;
 super.attack++;
 }
+    public String about(){
+	return "Boringest character ever. Cooks stuff. Has Ingredients and Utensils.";
+    }
 
 }

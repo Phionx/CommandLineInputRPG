@@ -28,4 +28,7 @@ super.defense--;
 super.attack++;
 }
 
+    public String about(){
+	return "A Swagmaster is someone who has so much swag that it is almost unbearable, they have the greatest amount of swagger possible to mankind, and it is very rare to see one. IF you do happen to come across a swagmaster, be respectful!! if you arent, him&his possy will overpower you with their swag. and you dont want that to happen. And also he has a swag variable that is always set to 100, except in the case that he gets out-swagged, in which case he ceases to exist. ";
+}
 }
