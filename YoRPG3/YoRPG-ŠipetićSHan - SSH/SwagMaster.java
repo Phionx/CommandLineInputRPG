@@ -18,5 +18,14 @@ public SwagMaster (String foo){
 super(100, 150, 20, 1, 1, "Swagmaster",  foo);
 }
 
+public void normalize (){
+super.defense = super.base_defense;
+super.attack = super.base_attack;
+}
+
+public void specialize(){
+super.defense--;
+super.attack++;
+}
 
 }

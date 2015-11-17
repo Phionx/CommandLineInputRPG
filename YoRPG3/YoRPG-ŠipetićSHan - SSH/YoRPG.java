@@ -93,23 +93,19 @@ public class YoRPG {
 				//instantiate the player's character
 				s = "\nGreat " + name + ", what do you wish to be:\n\n";
 				s += "\t1: Warrior\n";
-				s += "\t2: Blacksmith\n";
-				s += "\t3: Cook\n";
-				s += "\t4: Knight\n";
-				s += "\t6: Merchant\n";
-				s += "\t7: Ninja\n";
-				s += "\t8: Rogue\n";
-				s += "\t9: Scribe\n";
-				s += "\t10: Swagmaster\n";
-				s += "\t11: Socialist\n";
-				s += "\t12: Capitalist\n";
-				s += "\t13: I want you to decide for me\n";
+				s += "\t2: Cook\n";
+				s += "\t3: Knight\n";
+				s += "\t4: Mage\n";
+				s += "\t5: Swagmaster\n";
+				s += "\t6: Socialist\n";
+				s += "\t7: Capitalist\n";
+				s += "\t8: I want you to decide for me\n";
 				
 				
 				System.out.print(s);
 				
 				
-				while (choice <= 0 || choice > 13){
+				while (choice <= 0 || choice > 8){
 				System.out.print("Please enter a valid choice: ");
 				try {
 						choice = Integer.parseInt( in.readLine() );
@@ -118,8 +114,8 @@ public class YoRPG {
 				catch ( NumberFormatException e) {choice = 0;}
 				}
 				
-				if (choice == 13){
-					choice = (int)(Math.random()*12) + 1;
+				if (choice == 8){
+					choice = (int)(Math.random()*7) + 1;
 				}
 				
 				switch (choice) {
@@ -127,36 +123,21 @@ public class YoRPG {
 					 	pat = new Warrior( name );
 					 	break;
 					 case 2:
-					 	pat = new Blacksmith( name );
-					 	break;
+						pat = new Cook( name );
+						break; 
 					 case 3:
-					 	pat = new Cook( name );
-					 	break;
-					 case 4:
 					 	pat = new Knight( name );
 					 	break;
-					 case 5:
+					 case 4:
 					 	pat = new Mage( name );
 					 	break;
-					 case 6:
-					 	pat = new Merchant( name );
-					 	break;
-					 case 7:
-					 	pat = new Ninja( name );
-					 	break;
-					 case 8:
-					 	pat = new Rogue( name );
-					 	break;
-					 case 9:
-					 	pat = new Scribe( name );
-					 	break;
-					 case 11:
+					 case 5:
 					 	pat = new Socialist( name );
 					 	break;
-					 case 12:
+					 case 6:
 					 	pat = new Capitalist( name );
 					 	break;
-					 case 10:
+					 case 7:
 					 	pat = new SwagMaster( name );
 					 	break;
 					 default:

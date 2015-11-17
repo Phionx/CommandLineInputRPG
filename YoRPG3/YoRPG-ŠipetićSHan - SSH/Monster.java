@@ -20,5 +20,13 @@ public Monster (int low, int high, String temp_name){
 super((int)((high - low)*Math.random() + low), 150, 20, 1, 1, "Monster", temp_name);
 }
 
+public void normalize (){
+super.defense = super.base_defense;
+super.attack = super.base_attack;
+}
 
+public void specialize(){
+super.defense--;
+super.attack++;
+}
 }

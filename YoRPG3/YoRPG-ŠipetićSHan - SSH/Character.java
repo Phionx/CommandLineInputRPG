@@ -6,7 +6,7 @@ HW30 -- Ye Olde Role Playing Game, Expanded
 2015-11-15
 */
 
-public class Character{
+abstract class Character{
 
 final protected int base_HP, base_strength, base_defense, base_level;
 final protected double base_attack;
@@ -53,19 +53,13 @@ int damage = (int)(strength*attack - foo.getDefense());
 return damage;
 }
 
-public void specialize(){
-defense--;
-attack++;
-}
+abstract void specialize();
 
 public String getName(){
     return name;
 }
 
-public void normalize(){
-defense = base_defense;
-attack = base_attack;
-}
+abstract void normalize();
 
 protected int getHP(){
     return HP;
